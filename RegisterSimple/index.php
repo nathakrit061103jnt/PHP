@@ -15,21 +15,44 @@
 </head>
 <body>
 
-    <form class="form-signin">
-        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-            <div class="checkbox mb-3">
-                <label>
-                <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
-    </form>
+      <div class="container ">
+            <form  class="border border-light p-5 my-5">
+
+                    <p class="h4 mb-4 text-center">Sign in</p>
+
+                    <input type="text" id="" class="form-control mb-4" placeholder="username">
+
+                    <input type="password" id="" class="form-control mb-4" placeholder="password">
+
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <a href="">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+                    <div class="text-center">
+                        <p>Not a member?
+                            <a href="">Register</a>
+                        </p>
+
+                        <p>or sign in with:</p>
+                        <a type="button" class="light-blue-text mx-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a type="button" class="light-blue-text mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a type="button" class="light-blue-text mx-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a type="button" class="light-blue-text mx-2">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+              </form>
+      </div>
     
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
