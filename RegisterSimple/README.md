@@ -114,4 +114,4 @@
         </body>
         </html>
 
-![Image Alt](/images/login.png)
+![Image Alt](images/login.png)
