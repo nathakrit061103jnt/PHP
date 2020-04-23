@@ -1,5 +1,6 @@
-# Register Login PHP/Bootstrap and MYSQL
-## ตัวอย่างการสร้างระบบ Register เเละ Login เเบบง่ายๆ โดยใช้ PHP Bootstrap4 เเละ Mysqli
+# Register Login PHP/MBBootstrap and MYSQL
+## ตัวอย่างการสร้างระบบ Register เเละ Login เเบบง่ายๆ โดยใช้ PHP MBBootstrap4 เเละ Mysqli
+## เว็บไซต์ออกเเบบหน้าจอการล็อกอิน https://mdbootstrap.com/
 ### ดังนี้
  1. สร้างไฟล์ index.php เพื่อสร้างหน้า Login
        <!DOCTYPE html>
@@ -14,19 +15,48 @@
         </body>
         </html>
 
-2. ทำการ link Bootstrap 4 เข้ามา
-   <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Register & Login</title>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        </head>
-        <body>
-            
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        </body>
-        </html>
+2. ทำการ link [MBBootstrap](https://mdbootstrap.com/md-bootstrap-cdn/) เข้ามา
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register & Login</title>
+    <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <form class="form-signin">
+            <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <div class="checkbox mb-3">
+                    <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+        </form>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    </body>
+    </html>
